@@ -13,7 +13,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Mulkian</a>
         </div>
       </div>
 
@@ -25,7 +25,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                Pilihan Penyewaan
               </p>
             </a>
 
@@ -33,7 +33,7 @@
           <a href="#" class="nav-link">
               <i class="nav-icon fas fa-solid fa-users"></i>
               <p>
-                Mahasiswa
+                Jenis Mobil
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -41,19 +41,19 @@
               <li class="nav-item">
                 <a href="../../index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Mobil SUV</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../../index2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>Mobil sedan</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../../index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Bus</p>
                 </a>
               </li>
               
@@ -64,7 +64,7 @@
           <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-solid fa-list"></i>
               <p>
-                Jurusan
+                Sistem Penyewaan
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -72,19 +72,19 @@
               <li class="nav-item">
                 <a href="../../index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Syarat Sewa</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../../index2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>Tenggat Waktu</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../../index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>lepas kunci atau tidak</p>
                 </a>
               </li>
               
