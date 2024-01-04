@@ -77,7 +77,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="index2.html"><b>APK</b>Bajakan</a>
+    <a href="index2.html"><b>walid</b>rentcar</a>
   </div>
   <!-- /.login-logo -->
   <?php
