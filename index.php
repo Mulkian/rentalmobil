@@ -1,9 +1,19 @@
+<?php
+ session_start(); 
+ if(!isset($_SESSION['sid']) AND !isset($_COOKIE['cid'])){
+ ?>
+ <script>
+  document.location="login.php";
+  </script>
+  <?php
+ }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | RENTAL MOBIL</title>
+  <title>AdminLTE 3 | Blank Page</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -29,12 +39,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>RENTAL MOBIL</h1>
+            <h1>Blank Page</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">RENTAL MOBIL</li>
+              <li class="breadcrumb-item active">Blank Page</li>
             </ol>
           </div>
         </div>
@@ -42,7 +52,8 @@
     </section>
     <center> 
     <img src="dist/img/mobill.png" class="img-fluid" alt="img" width="650" >
-    </center>
+</center>
+
     <!-- Main content -->
     <section class="content">
 

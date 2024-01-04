@@ -29,11 +29,17 @@
     $id = $data['id'];
     $nama = $data['nama'];
 
+    if($_POST['ingat'] == "yes"){
+      // pembuatan cookie
+    setcookie("cid",$id, time() + (60*60*24*3),"/");
+    setcookie("cnama",$nama, time() + (60*60*24*3),"/");
+    setcookie("cemail",$email, time() + (60*60*24*3),"/");
+  }else {
     //PEMBUATAN SESSION
     $_SESSION['sid'] = $id;
     $_SESSION['nama'] = $nama;
     $_SESSION['email'] = $email;
-
+  }
     //update last log
     $qry_update = "UPDATE user SET last_log='now()'
     WHERE id='$id'";
