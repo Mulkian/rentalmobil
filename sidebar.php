@@ -30,35 +30,12 @@
             </a>
 
           <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="jenismobil.php" class="nav-link">
           <i class="fa fa-car-side"></i>
               <p>
                 Jenis Mobil
                 <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mobil SUV</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mobil sedan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Bus</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
+             
 
           <li class="nav-item">
           <a href="#" class="nav-link">
@@ -68,30 +45,7 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Syarat Sewa</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Tenggat Waktu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>lepas kunci atau tidak</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-
-        </ul>
+            
       </nav>
       <!-- /.sidebar-menu -->
     </div>
