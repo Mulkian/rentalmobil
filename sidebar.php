@@ -35,13 +35,25 @@
               <p>
                 Jenis Mobil
                 <i class="right fas fa-angle-left"></i>
+
+                
              
 
           <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="SistemPenyewaan.php" class="nav-link">
                 <i class="nav-icon fas fa-solid fa-list"></i>
               <p>
                 Sistem Penyewaan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+
+            
+          <li class="nav-item">
+          <a href="pilihmobil.php" class="nav-link">
+                <i class="nav-icon fas fa-solid fa-list"></i>
+              <p>
+                Tentukan Mobil
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>

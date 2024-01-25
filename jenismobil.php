@@ -92,7 +92,8 @@
                         <td><?php echo $data['kd_mobil'] ?></td>
                         <td><?php echo $data['type_mobil'] ?></td>
                         <td><?php echo $data['tahun_mobil'] ?></td>
-                        <td>4</td>
+                        <td><a href="" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></i></i></td>
+                        
 
                 </tr>
                 <?php
