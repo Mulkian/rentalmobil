@@ -57,6 +57,14 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <li class="nav-item">
+          <a href="jdwlrental.php" class="nav-link">
+                <i class="nav-icon fas fa-solid fa-list"></i>
+              <p>
+                Jadwal Perentalan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
             
       </nav>
       <!-- /.sidebar-menu -->

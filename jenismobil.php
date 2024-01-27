@@ -1,6 +1,6 @@
 <?php
- session_start(); 
- if(!isset($_SESSION['sid']) AND !isset($_COOKIE['cid'])){
+session_start(); 
+if(!isset($_SESSION['sid']) AND !isset($_COOKIE['cid'])){
  ?>
  <script>
   document.location="login.php";
@@ -8,6 +8,7 @@
   <?php
  }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +63,10 @@
       <div class="card">
               <div class="card-header">
                 <h3 class="card-title">DataTable with default features</h3>
+                <!-- Add the "Tambah Data" button here -->
+                <div class="card-tools">
+                  <a href="tambah_data.php" class="btn btn-success">Tambah Data</a>
+                </div>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -73,7 +78,6 @@
                     <th>type mobil</th>
                     <th>Tahun mobil</th>
                     <th>Aksi</th>
-                   
                   </tr>
                   </thead>
                   <tbody>
@@ -85,30 +89,24 @@
                     foreach($tampil as $data) {
                         // ...
                     }
-?>
-
+                  ?>
                     <tr>
                         <td><?php echo $nomor++ ?></td>
                         <td><?php echo $data['kd_mobil'] ?></td>
                         <td><?php echo $data['type_mobil'] ?></td>
                         <td><?php echo $data['tahun_mobil'] ?></td>
                         <td><a href="" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></i></i></td>
-                        
-
                 </tr>
                 <?php
-                    
                     ?>
                     </tbody>
-                  
                   <tfoot>
                   <tr>
                     <th>No</th>
-                  <th>kd mobil</th>
+                    <th>kd mobil</th>
                     <th>type mobil</th>
                     <th>Tahun mobil</th>
                     <th>Aksi</th>
-                   
                   </tr>
                   </tfoot>
                 </table>
