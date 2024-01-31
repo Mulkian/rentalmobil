@@ -34,7 +34,7 @@
           <i class="fa fa-car-side"></i>
               <p>
                 Jenis Mobil
-                <i class="right fas fa-angle-left"></i>
+                
 
                 
              
@@ -44,7 +44,7 @@
                 <i class="nav-icon fas fa-solid fa-list"></i>
               <p>
                 Sistem Penyewaan
-                <i class="right fas fa-angle-left"></i>
+              
               </p>
             </a>
 
@@ -54,15 +54,15 @@
                 <i class="nav-icon fas fa-solid fa-list"></i>
               <p>
                 Tentukan Mobil
-                <i class="right fas fa-angle-left"></i>
+                
               </p>
             </a>
             <li class="nav-item">
-          <a href="jdwlrental.php" class="nav-link">
+          <a href="jadwalrental.php" class="nav-link">
                 <i class="nav-icon fas fa-solid fa-list"></i>
               <p>
                 Jadwal Perentalan
-                <i class="right fas fa-angle-left"></i>
+                
               </p>
             </a>
             

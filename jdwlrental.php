@@ -58,7 +58,12 @@ if(!isset($_SESSION['sid']) AND !isset($_COOKIE['cid'])){
       <!-- Default box -->
       <div class="card">
         <div class="card-body">
-          <form action="process_jadwal_rental.php" method="post">
+          <form action="prosesjdwalrental.php" method="post">
+          <div class="form-group">
+              <label for="id_jadwal">ID Jadwal:</label>
+              <input type="text" name="id_jadwal" id="id_jadwal" class="form-control" required>
+            </div>
+
             <div class="form-group">
               <label for="tanggal_pemesanan">Tanggal Pemesanan:</label>
               <input type="date" name="tanggal_pemesanan" id="tanggal_pemesanan" class="form-control" required>

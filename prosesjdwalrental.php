@@ -5,23 +5,23 @@ include_once("koneksi.php");
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
-    $id_jadwal = $_POST["id_mobil"];
-    $tanggal_pemesanan = $_POST["tipe_mobil"];
-    $tanggal_pengembalian = $_POST["tahun_mobil"];
-    $jam_pemesanan = $_POST["tahun_mobil"];
-    $jam_pengembalian = $_POST["tahun_mobil"];
+    $id_jadwal = $_POST["id_jadwal"];
+    $tanggal_pemesanan = $_POST["tanggal_pemesanan"];
+    $tanggal_pengembalian = $_POST["tanggal_pengembalian"];
+    $jam_pemesanan = $_POST["jam_pemesanan"];
+    $jam_pengembalian = $_POST["jam_pengembalian"];
 
 
     // You may need to validate and sanitize the input data before using it in the query
 
     // Insert data into the database
-    $query = "INSERT INTO jenis_mobil (id_mobil, tipe_mobil, tahun_mobil) VALUES ('$id_mobil', '$tipe_mobil', '$tahun_mobil')";
+    $query = "INSERT INTO jdwlrental (id_jadwal, tanggal_pemesanan, tanggal_pengembalian,jam_pemesanan,jam_pengembalian) VALUES ('$id_jadwal', '$tanggal_pemesanan','$tanggal_pengembalian','$jam_pemesanan','$jam_pengembalian')";
     $result = mysqli_query($con, $query);
 
     // Check if the insertion was successful
     if ($result) {
         // Redirect to the list_mobil.php page after successful insertion
-        header("Location: index.php");
+        header("Location: jadwalrental.php");
         exit();
     } else {
         // Handle the error (you may want to customize this part based on your needs)
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // If the form is not submitted, redirect to the tambahmobil.php page
-    header("Location: index.php");
+    header("Location: jadwalrental.php");
     exit();
 }
 
