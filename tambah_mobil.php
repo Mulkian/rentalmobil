@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <section class="content">
       <div class="card">
         <div class="card-body">
-          <form action="" method="post">
+          <form action="proses_tambah_mobil.php" method="post">
             <div class="form-group">
               <label for="kd_mobil">Kode Mobil:</label>
               <input type="text" name="kd_mobil" id="kd_mobil" class="form-control" required>
