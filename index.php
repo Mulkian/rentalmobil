@@ -126,20 +126,30 @@
           <!-- ./col -->
           <!-- ./col -->
           <div class="col-lg-3 col-6">
+          <?php 
+            //koneksi
+            include_once("koneksi.php");
+            //sql query
+            $sql_sistempenyewaan = "SELECT * FROM sistempenyewaan";
+            //jalankan query
+            $result_sistempenyewaan = mysqli_query($con, $sql_sistempenyewaan);
+            //hitung data
+            $sql_sistempenyewaan = mysqli_num_rows($result_sistempenyewaan);
+            ?>
          
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3>
-                786
+                <?php echo $sql_sistempenyewaan ?>
                 </h3>
 
-                <p>Daftar Transaksi</p>
+                <p>Sistem Penyewaan</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="daftartransaksi.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="daftarsistempenyewaan.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
