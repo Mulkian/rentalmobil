@@ -54,9 +54,9 @@ include_once("koneksi.php");
             <section class="content">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">List Petugas</h3>
+                        <h3 class="card-title">SistemPenyewaan</h3>
                         <!-- Tambah Mobil Button -->
-                        <a href="tambah_petugas.php" class="btn btn-primary float-right">Tambah Petugas</a>
+                        <a href="tambah_sistempenyewaan.php" class="btn btn-primary float-right">Lampiran Penyewaan</a>
                     </div>
 
                     <!-- /.card-header -->
@@ -64,26 +64,28 @@ include_once("koneksi.php");
                         <table id="example1" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>No</th>
-                                    <th>ID Petugas</th>
-                                    <th>Nama</th>
-                                    <th>Hp</th>
-                                    <th>Alamat</th>
+                                    <th>no</th>
+                                    <th>Kd Mobil</th>
+                                    <th>Plat Mobil</th>
+                                    <th>Lepas Kunci</th>
+                                    <th>Driver</th>
+                                    <th>Non Driver</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                $qry = "SELECT * FROM petugas";
+                                $qry = "SELECT * FROM sistempenyewaan";
                                 $tampil = mysqli_query($con, $qry);
                                 $nomor = 1;
                                 foreach ($tampil as $data) {
                                 ?>
                                     <tr>
                                         <td><?php echo $nomor++ ?></td>
-                                        <td><?php echo $data['id_petugas'] ?></td>
-                                        <td><?php echo $data['nm_petugas'] ?></td>
-                                        <td><?php echo $data['hp_petugas'] ?></td>
-                                        <td><?php echo $data['alamat_petugas'] ?></td>
+                                        <td><?php echo $data['kd_mobil'] ?></td>
+                                        <td><?php echo $data['plat_mobil'] ?></td>
+                                        <td><?php echo $data['lepas_kunci'] ?></td>
+                                        <td><?php echo $data['driver'] ?></td>
+                                        <td><?php echo $data['non_driver'] ?></td>
                                     </tr>
                                 <?php
                                 }

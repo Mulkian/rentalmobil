@@ -145,20 +145,29 @@
           <!-- ./col -->
           <!-- ./col -->
           <div class="col-lg-3 col-6">
-         
+          <?php 
+            //koneksi
+            include_once("koneksi.php");
+            //sql query
+            $sql_jdwlrental = "SELECT * FROM jdwlrental";
+            //jalankan query
+            $result_jdwlrental = mysqli_query($con, $sql_jdwlrental);
+            //hitung data
+            $jdwlrental = mysqli_num_rows($result_jdwlrental);
+            ?>
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3>
-              98
+                <?php echo $jdwlrental ?>
                 </h3>
 
-                <p>Daftar Penyerahan</p>
+                <p>Jadwal Perentalan</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="daftardokumen.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="jadwalrental.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

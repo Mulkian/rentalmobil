@@ -12,13 +12,14 @@ include_once("koneksi.php");
 
 // Process form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id_petugas = $_POST["id_petugas"];
-    $nm_petugas = $_POST["nm_petugas"];
-    $hp_petugas = $_POST["hp_petugas"];
-    $alamat_petugas = $_POST["alamat_petugas"];
+    $kd_mobil = $_POST["kd_mobil"];
+    $plat_mobil = $_POST["plat_mobil"];
+    $lepas_kunci = $_POST["lepas_kunci"];
+    $driver = $_POST["driver"];
+    $non_driver = $_POST["non_driver"];
 
     // Perform database insertion (replace this with your actual database insert code)
-    $insert_query = "INSERT INTO petugas (id_petugas, nm_petugas, hp_petugas, alamat_petugas) VALUES ('$id_petugas', '$nama_petugas', '$hp_petugas','$alamat_petugas')";
+    $insert_query = "INSERT INTO sistempenyewaan (kd_mobil, plat_mobil, lepas_kunci, driver, non_driver) VALUES ('$kd_mobil', '$plat_mobil', '$lepas_kunci','$driver','$non_driver')";
     mysqli_query($con, $insert_query);
 
     // Redirect to the page displaying the data table
@@ -32,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Tambah Petugas</title>
+  <title>AdminLTE 3 | Lampiran Sistem Penyewaan</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
@@ -47,12 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah Petugas</h1>
+            <h1>tambah Sistem Penyewaan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Tambah Petugas</li>
+              <li class="breadcrumb-item active">Tambah Sistem Penyewann</li>
             </ol>
           </div>
         </div>
@@ -62,25 +63,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <section class="content">
       <div class="card">
         <div class="card-body">
-          <form action="proses_tambah_petugas.php" method="post">
+          <form action="proses_tambah_sistempenyewaan.php" method="post">
             <div class="form-group">
-              <label for="no_pemesan">Id Petugas:</label>
-              <input type="text" name="id_petugas" id="id_petugas" class="form-control" required>
+              <label for="kd_mobil">Kd Mobil:</label>
+              <input type="text" name="kd_mobil" id="kd_mobil" class="form-control" required>
             </div>
 
             <div class="form-group">
-              <label for="nm_pemesan">Nama Petugas:</label>
-              <input type="text" name="nm_petugas" id="nm_petugas" class="form-control" required>
+              <label for="plat_mobil">Plat Mobil:</label>
+              <input type="text" name="plat_mobil" id="plat_mobil" class="form-control" required>
             </div>
 
             <div class="form-group">
-              <label for="hp_pemesan">HP Petugas:</label>
-              <input type="text" name="hp_petugas" id="hp_petugas" class="form-control" required>
+              <label for="lepas_kunci">Lepas Kunci:</label>
+              <input type="text" name="lepas_kunci" id="lepas_kunci" class="form-control" required>
             </div>
 
             <div class="form-group">
-              <label for="alamat_pemesan">Alamat Petugas:</label>
-              <input type="text" name="alamat_petugas" id="alamat_petugas" class="form-control" required>
+              <label for="driver">Driver:</label>
+              <input type="text" name="driver" id="driver" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="non_driver">Non driver:</label>
+              <input type="text" name="non_driver" id="non_driver" class="form-control" required>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

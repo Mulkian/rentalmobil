@@ -33,21 +33,28 @@
                 <li class="nav-item">
                     <a href="daftarmobil.php" class="nav-link">
                         <i class="fa fa-car-side"></i>
-                        <p>Jenis Mobil</p>
+                        <p>Daftar Mobil</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="daftarpemesan.php" class="nav-link">
+                    <i class="fa fa-user"></i>
+                        <p>Daftar Pemesan</p>
+                    </a>
+                </li>
+                
 
                 <li class="nav-item">
-                    <a href="SistemPenyewaan.php" class="nav-link">
+                    <a href="daftarsistemPenyewaan.php" class="nav-link">
                     <i class="fas fa-cogs"></i>
                         <p>Sistem Penyewaan</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="pilihmobil.php" class="nav-link">
+                    <a href="daftarpetugas.php" class="nav-link">
                         <i class="fas fa-list"></i>
-                        <p>Tentukan Mobil</p>
+                        <p>Daftar Petugas</p>
                     </a>
                 </li>
 
