@@ -85,7 +85,30 @@ include_once("koneksi.php");
                                         <td><?php echo $data['nm_pemesan'] ?></td>
                                         <td><?php echo $data['hp_pemesan'] ?></td>
                                         <td><?php echo $data['alamat_pemesan'] ?></td>
-                                        <td><a href="ubah_pemesan.php?no_pemesan=<?php echo $data['no_pemesan'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></td>
+                                        <td>
+                                            <a href="ubah_pemesan.php?no_pemesan=<?php echo $data['no_pemesan'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a>
+                                        <!-- tombol hapus -->
+                                        <button type="button" data-toggle="modal" data-target="#hapus<?php echo $data['no_pemesan'] ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="hapus<?php echo $data['no_pemesan'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Peringatan</h1>
+                                                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Apakah Data Mobil Dengan tipe <b><?php echo $data['nm_pemesan'] ?></b> Ingin Dihapus?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                                                            <a href="proses_hapus_pemesan.php?no_pemesan=<?php echo $data['no_pemesan'] ?>" class="btn btn-danger">Ya</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 <?php
                                 }

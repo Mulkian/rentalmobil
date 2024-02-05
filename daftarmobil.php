@@ -22,6 +22,9 @@ include_once("koneksi.php");
     <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyW+NU9YZgST+6gWWOaRvHj8lWysqdThPA" crossorigin="anonymous">
+
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -83,7 +86,31 @@ include_once("koneksi.php");
                                         <td><?php echo $data['kd_mobil'] ?></td>
                                         <td><?php echo $data['type_mobil'] ?></td>
                                         <td><?php echo $data['tahun_mobil'] ?></td>
-                                        <td><a href="ubah_mobil.php?kd_mobil=<?php echo $data['kd_mobil'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></td>
+                                        <td>
+                                            <a href="ubah_mobil.php?kd_mobil=<?php echo $data['kd_mobil'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a>
+                                            <!-- tombol hapus -->
+                                            <button type="button" data-toggle="modal" data-target="#hapus<?php echo $data['kd_mobil'] ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="hapus<?php echo $data['kd_mobil'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Peringatan</h1>
+                                                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Apakah Data Mobil Dengan tipe <b><?php echo $data['type_mobil'] ?></b> Ingin Dihapus?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                                                            <a href="proses_hapus_mobil.php?kd_mobil=<?php echo $data['kd_mobil'] ?>" class="btn btn-danger">Ya</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                  </div>
+
+                                    </td>
                                     </tr>
                                 <?php
                                 }
