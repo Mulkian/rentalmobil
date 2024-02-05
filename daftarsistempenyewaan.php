@@ -70,6 +70,8 @@ include_once("koneksi.php");
                                     <th>Lepas Kunci</th>
                                     <th>Driver</th>
                                     <th>Non Driver</th>
+                                    <th>Aksi</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -86,6 +88,7 @@ include_once("koneksi.php");
                                         <td><?php echo $data['lepas_kunci'] ?></td>
                                         <td><?php echo $data['driver'] ?></td>
                                         <td><?php echo $data['non_driver'] ?></td>
+                                        <td><a href="ubah_sistem.php?kd_mobil=<?php echo $data['kd_mobil'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></td>
                                     </tr>
                                 <?php
                                 }

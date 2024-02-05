@@ -68,6 +68,7 @@ include_once("koneksi.php");
                                     <th>kode mobil</th>
                                     <th>Tipe Mobil</th>
                                     <th>Tahun Mobil</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -82,6 +83,7 @@ include_once("koneksi.php");
                                         <td><?php echo $data['kd_mobil'] ?></td>
                                         <td><?php echo $data['type_mobil'] ?></td>
                                         <td><?php echo $data['tahun_mobil'] ?></td>
+                                        <td><a href="ubah_mobil.php?kd_mobil=<?php echo $data['kd_mobil'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></td>
                                     </tr>
                                 <?php
                                 }

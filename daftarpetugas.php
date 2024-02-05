@@ -69,6 +69,7 @@ include_once("koneksi.php");
                                     <th>Nama</th>
                                     <th>Hp</th>
                                     <th>Alamat</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -84,6 +85,7 @@ include_once("koneksi.php");
                                         <td><?php echo $data['nm_petugas'] ?></td>
                                         <td><?php echo $data['hp_petugas'] ?></td>
                                         <td><?php echo $data['alamat_petugas'] ?></td>
+                                        <td><a href="ubah_petugas.php?id_petugas=<?php echo $data['id_petugas'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></td>
                                     </tr>
                                 <?php
                                 }

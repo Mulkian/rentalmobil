@@ -54,7 +54,7 @@ include_once("koneksi.php");
             <section class="content">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">List Mobil Tersedia</h3>
+                        <h3 class="card-title">List Jadwal</h3>
                         <!-- Tambah Mobil Button -->
                         <a href="jdwlrental.php" class="btn btn-primary float-right">Tambah jadwal</a>
                     </div>
@@ -70,6 +70,7 @@ include_once("koneksi.php");
                                     <th>Tanggal Pengembalian</th>
                                     <th>Jam Pemesanan</th>
                                     <th>Jam Pengembalian</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -86,6 +87,7 @@ include_once("koneksi.php");
                                         <td><?php echo $data['tanggal_pengembalian'] ?></td>
                                         <td><?php echo $data['jam_pemesanan'] ?></td>
                                         <td><?php echo $data['jam_pengembalian'] ?></td>
+                                        <td><a href="ubah_jadwalperentalan.php?id_jadwal=<?php echo $data['id_jadwal'] ?>" class="btn btn-sm btn-info"><i class="fa fa-pencil-alt"></i></a></td>
                                     </tr>
                                 <?php
                                 }
